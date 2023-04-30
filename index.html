@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </head>
+    <body class="container">
+
+        <div class="jumbotron">
+            <h1>Student Management System!</h1>
+          </div>
+
+        <div class="form-inline">
+            <h3>See your child</h3>
+            <h5>What is their ID number?</h5>
+            <input id="find_child_number" class="form-control">
+            <button class="btn btn-primary" onclick="find()">Find your child</button>
+            <p id="childDetails"></p>
+        </div>
+        <br> <br>
+
+        <div class="form-inline">
+            <h3>Add a child</h3>
+            <h5>Please give in your child's details</h5>
+            <h6>Name:</h6>
+            <input id="enter_child_name" class="form-control">
+            <h6>School:</h6>
+            <input id="enter_child_school" class="form-control">
+            <h6>ID number:</h6>
+            <input id="enter_child_id" class="form-control">
+            <button class="btn btn-default" onclick="add()">Add this child</button>
+        </div>
+
+    </body>
+</html>
